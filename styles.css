@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5, h6 {
   --background-white: #ffffff;
   --main-text-color: #232323;
   --tournament-green: #2b652e;
+  --tournament-green-lighter: #418645;
+  --tournament-green-darker: #1b491e;
 }
 
 .sidebar-image-left {
@@ -160,6 +162,14 @@ span.italic {
   margin-bottom: 2rem;
 }
 
+.register-button:hover {
+  background-color: var(--tournament-green-lighter);
+}
+
+.register-button:active {
+  background-color: var(--tournament-green-darker);
+}
+
 .bottom p {
   font-size: 1.1rem;
 }
@@ -171,6 +181,9 @@ span.italic {
 }
 
 .bottom .login:hover {
-  color: #418645
+  color: var(--tournament-green-lighter);
 }
 
+.bottom .login:active {
+  color: var(--tournament-green-darker);
+}
