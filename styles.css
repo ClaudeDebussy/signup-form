@@ -1,3 +1,14 @@
-h1 {
-  font-family: 'Courier New', Courier, monospace;
+@font-face {
+  font-family: skranji;
+  src: url(fonts/Skranji.woff)
 }
+
+h1 {
+  font-family: skranji, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar
