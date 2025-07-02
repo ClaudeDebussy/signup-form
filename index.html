@@ -13,14 +13,14 @@
     </div>
     <div class="main">
       <div class="top">
-        <h2>Ready to compete? Sign up <span class="italic">now</span> for the Tashkent Open Tennis Tournament! Join players of <span class="italic">all</span> levels for a day of exciting matches, friendly competition, and great prizes.</h2>
+        <h2><span class="green">Ready to compete?</span> Sign up <span class="italic">now</span> for the Tashkent Open Tennis Tournament! Join players of <span class="italic">all</span> levels for a day of exciting matches, friendly competition, and great prizes.</h2>
         <h2>Secure <span class="italic">your</span> spot on the court today!</h2>
       </div>
       <div class="form-area">
         <header class="signup-form-header">
           <h2>Let's go!</h2>
         </header>
-        <form action="" method="post" class="signup-form">
+        <form id="tournament-registration" action="" method="get" class="signup-form">
           <div class="form-row">
             <div class="form-element">
               <label for="first-name">First name</label>
@@ -43,17 +43,20 @@
           </div>
           <div class="form-row">
             <div class="form-element">
-              <label for="">Password</label>
-              <input type="text">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
             </div>
             <div class="form-element">
-              <label for="">Confirm password</label>
-              <input type="text">
+              <label for="password-verification">Confirm password</label>
+              <input type="password" id="password-verification" name="password">
             </div>
           </div>
         </form>
       </div>
-      <div class="bottom"></div>
+      <div class="bottom">
+        <button form="tournament-registration" type="submit" class="register-button" value="register">Register to play!</button>
+        <p>Already registered? <a class="login" href="">Log in</a></p>
+      </div>
     </div>
   </div>
 </body>

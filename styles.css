@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   --background-grey: #fbfbfb;
   --background-white: #ffffff;
   --main-text-color: #232323;
+  --tournament-green: #2b652e;
 }
 
 .sidebar-image-left {
@@ -93,15 +94,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
 }
 
+.green {
+  color: var(--tournament-green);
+}
+
 .form-area {
   flex-basis: auto;
   background-color: var(--background-white);
 
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
 }
 
 .bottom {
   flex-basis: auto;
+  padding: 2rem 3rem 3rem 3rem;
 }
 
 span.italic {
@@ -137,3 +143,34 @@ span.italic {
   font-size: 14px;
   padding: 7px;
 }
+
+.register-button {
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: var(--tournament-green);
+
+  border: none;
+  border-radius: .5rem;
+
+  padding: 10px 40px;
+  cursor: pointer;
+
+  margin-bottom: 2rem;
+}
+
+.bottom p {
+  font-size: 1.1rem;
+}
+
+.bottom .login {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--tournament-green)
+}
+
+.bottom .login:hover {
+  color: #418645
+}
+
