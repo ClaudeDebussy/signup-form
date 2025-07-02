@@ -1,14 +1,104 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 @font-face {
   font-family: skranji;
   src: url(fonts/Skranji.woff)
 }
 
-h1 {
-  font-family: skranji, sans-serif;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
+  
+  --background-grey: #fbfbfb;
 }
 
-.sidebar
+.sidebar-image-left {
+  height: 100vh;
+  flex-basis: 33%;
+
+  background-image: url(img/geronimo-giqueaux.jpg);
+  font-family: skranji, sans-serif;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 67%;
+  background-color: var(--background-grey);
+
+}
+
+.top {
+  flex-basis: 33%;
+  padding: 12rem 3rem 3rem 3rem;
+}
+
+.top h2:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  flex-basis: 33%;
+  background-color: #ffffff;
+}
+
+.bottom {
+  flex-basis: 33%;
+}
+
+span.italic {
+  font-style: italic;
+}
