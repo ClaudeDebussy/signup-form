@@ -73,9 +73,57 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   flex-basis: 33%;
 
+  position: relative;
+
   background-image: url(img/geronimo-giqueaux.jpg);
   font-family: skranji, sans-serif;
 
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  
+  background-color: #23232378;
+
+  position: relative;
+  top: 12rem;
+}
+
+.logo-area .logo {
+  margin: 1rem;
+}
+
+.logo-area h1 {
+  font-size: 5rem;  
+  color: white;
+  letter-spacing: .2rem;
+}
+
+.sidebar-attribution-text {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #23232378;
+  color: white;
+}
+
+.sidebar-attribution-text p {
+  text-align: center;
+}
+
+.sidebar-attribution-text a {
+  color: white;
+}
+
+.sidebar-attribution-text a:hover {
+  color: var(--main-text-color);
 }
 
 .main {
