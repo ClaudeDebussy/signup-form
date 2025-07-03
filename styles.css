@@ -184,6 +184,10 @@ span.italic {
   margin-bottom: 1.5rem;
 }
 
+.form-element label {
+  margin-bottom: 0.15rem;
+}
+
 .form-element:first-child {
   margin-right: 5rem;
 }
@@ -194,6 +198,20 @@ span.italic {
   border-radius: 3px;
   font-size: 14px;
   padding: 7px;
+}
+
+.form-element input:focus {
+  border: 0.1rem solid var(--tournament-green);
+  outline: none;
+  box-shadow: 0px 5px 8px -8px var(--main-text-color);
+}
+
+.form-element input:user-invalid {
+  border-color: red;
+}
+
+.form-element input:valid {
+  border-color: var(--tournament-green-lighter);
 }
 
 .register-button {
