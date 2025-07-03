@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   
-  --background-grey: #fbfbfb;
+  --background-grey: #f1f1f1;
   --background-white: #ffffff;
   --main-text-color: #232323;
   --tournament-green: #2b652e;
@@ -153,6 +153,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--background-white);
 
   padding: 1rem 3rem 1rem 3rem;
+
+  box-shadow: 0px 5px 8px -8px var(--main-text-color);
 }
 
 .bottom {
